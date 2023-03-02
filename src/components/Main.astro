@@ -1,6 +1,7 @@
 ---
 import SideNav from "./SideNav.astro";
 import TopNav from "./TopNav.astro";
+import Card from "./Card.astro";
 ---
 
 <section>
@@ -13,67 +14,17 @@ import TopNav from "./TopNav.astro";
       </div>
 
       <div class="row">
-        <div class="card">
-          <img src="/spotify_images/peaceful_piano.jpeg" alt="peaceful piano" />
-          <div class="play_knap">
-            <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw"
-              ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg
-            >
-          </div>
-          <div>
-            <h3>Peaceful Piano</h3>
-            <p>Relax and indulge with beautiful piano pieces</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/spotify_images/deep_focus.jpeg" alt="peaceful piano" />
-          <div class="play_knap">
-            <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw"
-              ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg
-            >
-          </div>
-          <div>
-            <h3>Deep Focus</h3>
-            <p>Keep calm and focus with ambient and post-rock..</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/spotify_images/instrumental_study.jpeg" alt="peaceful piano" />
-          <div class="play_knap">
-            <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw"
-              ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg
-            >
-          </div>
-          <div>
-            <h3>Instrumental Study</h3>
-            <p>Focus with soft study music in the background.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/spotify_images/jazz_vibes.jpeg" alt="peaceful piano" />
-          <div class="play_knap">
-            <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw"
-              ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg
-            >
-          </div>
-          <div>
-            <h3>Jazz Vibes</h3>
-            <p>The original chill instrumental beats plavlist.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/spotify_images/focus_flow.jpeg" alt="peaceful piano" />
-          <div class="play_knap">
-            <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw"
-              ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg
-            >
-          </div>
-          <div>
-            <h3>Focus Flow</h3>
-            <p>Uptempo instrumental hip hop beats.</p>
-          </div>
-        </div>
+        <Card h3="Peaceful Piano" p="Relax and indulge with beautiful piano pieces" imgname="/spotify_images/peaceful_piano.jpeg" />
+
+        <Card h3="Deep Focus" p="Keep calm and focus with ambient and post-rock.." imgname="/spotify_images/deep_focus.jpeg" />
+
+        <Card h3="Instrumental Study" p="Focus with soft study music in the background." imgname="/spotify_images/instrumental_study.jpeg" />
+
+        <Card h3="Jazz Vibes" p="The original chill instrumental beats plavlist." imgname="/spotify_images/jazz_vibes.jpeg" />
+
+        <Card h3="Focus Flow" p="Uptempo instrumental hip hop beats." imgname="/spotify_images/focus_flow.jpeg" />
       </div>
+
       <div>
         <div class="top_row second">
           <h1>Spotify Playlists</h1>
@@ -81,69 +32,17 @@ import TopNav from "./TopNav.astro";
         </div>
 
         <div class="row">
-          <div class="card">
-            <img src="/spotify_images/tth.jpeg" alt="peaceful piano" />
-            <div class="play_knap">
-              <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw"
-                ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg
-              >
-            </div>
-            <div>
-              <h3>Today's Top Hits</h3>
-              <p>Relax and indulge with beautiful piano pieces</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="/spotify_images/rap_caviar.jpeg" alt="peaceful piano" />
-            <div class="play_knap">
-              <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw"
-                ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg
-              >
-            </div>
-            <div>
-              <h3>RapCaviar</h3>
-              <p>Keep calm and focus with ambient and post-rock..</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="/spotify_images/all_out_2010s.jpeg" alt="peaceful piano" />
-            <div class="play_knap">
-              <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw"
-                ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg
-              >
-            </div>
-            <div>
-              <h3>All Out 2010s</h3>
-              <p>Focus with soft study music in the background.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="/spotify_images/rock_classics.jpeg" alt="peaceful piano" />
-            <div class="play_knap">
-              <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw"
-                ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg
-              >
-            </div>
-            <div>
-              <h3>Rock Classics</h3>
-              <p>The original chill instrumental beats plavlist.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="/spotify_images/chill_hits.jpeg" alt="peaceful piano" />
-            <div class="play_knap">
-              <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw"
-                ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg
-              >
-            </div>
-            <div>
-              <h3>Chill Hits</h3>
-              <p>Uptempo instrumental hip hop beats.</p>
-            </div>
-          </div>
+          <Card h3="Today's Top Hits" p="Relax and indulge with beautiful piano pieces" imgname="/spotify_images/tth.jpeg" />
+
+          <Card h3="RapCaviar" p="Relax and indulge with beautiful piano pieces" imgname="/spotify_images/rap_caviar.jpeg" />
+
+          <Card h3="All Out 2010s" p="Relax and indulge with beautiful piano pieces" imgname="/spotify_images/all_out_2010s.jpeg" />
+
+          <Card h3="Rock Classics" p="Relax and indulge with beautiful piano pieces" imgname="/spotify_images/rock_classics.jpeg" />
+
+          <Card h3="Chill Hits" p="Relax and indulge with beautiful piano pieces" imgname="/spotify_images/chill_hits.jpeg" />
         </div>
       </div>
-      <div></div>
     </div>
   </div>
 
@@ -151,7 +50,6 @@ import TopNav from "./TopNav.astro";
     section {
       display: grid;
       grid-template-rows: 60px auto;
-
       width: 100%;
       height: 100%;
     }
@@ -167,6 +65,7 @@ import TopNav from "./TopNav.astro";
     .row {
       display: flex;
       gap: 2rem;
+      width: 100%;
     }
 
     .top_row {

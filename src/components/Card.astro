@@ -1,15 +1,68 @@
 ---
-const { header } = Astro.props;
+const { h3, p, imgname } = Astro.props;
 ---
 
-<article>
-  <h2>{header}</h2>
-  <p>Kortere lorem ipsum</p>
-  <button>klik her</button>
-</article>
-
+<div class="card">
+  <img src={imgname} alt="peaceful piano" />
+  <div class="play_knap">
+    <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon" class="Svg-sc-ytk21e-0 uPxdw"
+      ><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg
+    >
+  </div>
+  <div>
+    <h3>{h3}</h3>
+    <p>{p}</p>
+  </div>
+</div>
 <style>
+  .card {
+    margin-top: 2rem;
+    padding: 16px;
+    height: 265px;
+    width: 180px;
+    border-radius: 7px;
+    background-color: var(--cardcolor);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    background-color: var(--highligt);
+    transition: background-color 0.3s ease;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 50%);
+  }
+  .play_knap {
+    position: absolute;
+    translate: 260% -130%;
+    opacity: 0%;
+    transition: 0.3s ease;
+  }
+  .play_knap svg {
+    z-index: 10;
+    background-color: #1ed760;
+    padding: 12px;
+    border-radius: 400px;
+  }
+
+  .card:hover .play_knap {
+    transition: 0.3s ease;
+    translate: 260% -150%;
+    opacity: 100%;
+  }
+  h3 {
+    padding-bottom: 4px;
+    line-height: 1.3;
+  }
+
   p {
-    color: black;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.3;
   }
 </style>
