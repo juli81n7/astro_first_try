@@ -1,3 +1,33 @@
-body {
-  background-color: hotpink;
+* {
+  --black1: #000000;
+  --black2: #121212;
+  --black3: #212121;
+  --cardcolor: #181818;
+  --topNavColor: #101010;
+  --highligt: #302f2f;
+  --white: #ffffff;
+  --grey_text: #a7a7a7;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+h3 {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+p {
+  color: var(--grey_text);
+  font-weight: 500;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 15rem auto;
+  height: 100vh;
 }

@@ -1,0 +1,170 @@
+---
+import SideNav from "./SideNav.astro";
+import TopNav from "./TopNav.astro";
+---
+
+<section>
+  <slot />
+  <div class="indhold">
+    <div>
+      <div class="top_row">
+        <h1>Fokus</h1>
+        <p>Vis alle</p>
+      </div>
+
+      <div class="row">
+        <div class="card">
+          <img src="/spotify_images/peaceful_piano.jpeg" alt="peaceful piano" />
+          <div>
+            <h3>Peaceful Piano</h3>
+            <p>Relax and indulge with beautiful piano pieces</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/spotify_images/deep_focus.jpeg" alt="peaceful piano" />
+          <div>
+            <h3>Deep Focus</h3>
+            <p>Keep calm and focus with ambient and post-rock..</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/spotify_images/instrumental_study.jpeg" alt="peaceful piano" />
+          <div>
+            <h3>Instrumental Study</h3>
+            <p>Focus with soft study music in the background.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/spotify_images/jazz_vibes.jpeg" alt="peaceful piano" />
+          <div>
+            <h3>Jazz Vibes</h3>
+            <p>The original chill instrumental beats plavlist.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/spotify_images/focus_flow.jpeg" alt="peaceful piano" />
+          <div>
+            <h3>Focus Flow</h3>
+            <p>Uptempo instrumental hip hop beats.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="top_row second">
+          <h1>Spotify Playlists</h1>
+          <p>Vis alle</p>
+        </div>
+
+        <div class="row">
+          <div class="card">
+            <img src="/spotify_images/tth.jpeg" alt="peaceful piano" />
+            <div>
+              <h3>Today's Top Hits</h3>
+              <p>Relax and indulge with beautiful piano pieces</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/spotify_images/rap_caviar.jpeg" alt="peaceful piano" />
+            <div>
+              <h3>RapCaviar</h3>
+              <p>Keep calm and focus with ambient and post-rock..</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/spotify_images/all_out_2010s.jpeg" alt="peaceful piano" />
+            <div>
+              <h3>All Out 2010s</h3>
+              <p>Focus with soft study music in the background.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/spotify_images/rock_classics.jpeg" alt="peaceful piano" />
+            <div>
+              <h3>Rock Classics</h3>
+              <p>The original chill instrumental beats plavlist.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/spotify_images/chill_hits.jpeg" alt="peaceful piano" />
+            <div>
+              <h3>Chill Hits</h3>
+              <p>Uptempo instrumental hip hop beats.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+
+  <style>
+    section {
+      display: grid;
+      grid-template-rows: 60px auto;
+
+      width: 100%;
+      height: 100%;
+    }
+
+    .indhold {
+      background-color: var(--black2);
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      padding: 2rem;
+      padding-top: 1.5rem;
+    }
+
+    .row {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .top_row {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top_row p:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .top_row.second {
+      margin-top: 2rem;
+    }
+
+    .card {
+      margin-top: 2rem;
+      padding: 16px;
+      height: 265px;
+      width: 180px;
+      border-radius: 7px;
+      background-color: var(--cardcolor);
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      background-color: var(--highligt);
+      transition: background-color 0.3s ease;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 24px rgb(0 0 0 / 50%);
+    }
+    h3 {
+      padding-bottom: 4px;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.3;
+    }
+  </style>
+</section>

@@ -1,0 +1,44 @@
+---
+import Button from "../components/Button.astro";
+import ArrowNav from "../components/ArrowNav.astro";
+---
+
+<section>
+  <div class="navigation">
+    <ArrowNav />
+  </div>
+  <div>
+    <p>Tilmeld Dig</p>
+    <a href="#">
+      <Button>Log På</Button>
+    </a>
+  </div>
+</section>
+
+<style>
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--topNavColor);
+  }
+
+  section div {
+    display: flex;
+    align-items: center;
+  }
+
+  section :last-child {
+    justify-content: end;
+    margin-right: 10px;
+    gap: 2rem;
+  }
+  .navigation {
+    margin-left: 1rem;
+  }
+  p {
+    font-size: 1.05rem;
+  }
+</style>

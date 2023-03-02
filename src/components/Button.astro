@@ -1,30 +1,22 @@
 ---
-const { variant, size } = Astro.props;
 ---
 
-<button class={(variant, size)}>
+<button>
   <slot />
 </button>
 
 <style>
   button {
-    padding: 1rem;
+    background-color: var(--white);
+    border: none;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    min-block-size: 48px;
+    padding: 8px 32px;
+    border-radius: 30px;
   }
-  .primary {
-    background-color: darkblue;
-    color: white;
-  }
-  .secondary {
-    background-color: white;
-    color: darkblue;
-  }
-  .small {
-    font-size: 1rem;
-  }
-  .medium {
-    font-size: 2rem;
-  }
-  .large {
-    font-size: 3rem;
+  button:hover {
+    scale: 1.05;
   }
 </style>
