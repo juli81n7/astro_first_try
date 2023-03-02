@@ -29,5 +29,6 @@ p {
 main {
   display: grid;
   grid-template-columns: 15rem auto;
-  height: 100vh;
+  grid-template-rows: auto 1fr;
+  height: 100100%;
 }

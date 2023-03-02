@@ -1,0 +1,42 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<section>
+  <div>
+    <h5>EKSEMPEL PÅ SPOTIFY</h5>
+    <p>Tilmeld dig for at fà ubegreensede sange og podcasts med leilighedsvise reklamer. Du skal ikke bruge kreditkort.</p>
+  </div>
+  <div class="cta">
+    <Button>Tilmed Dig Gratis</Button>
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: aquamarine;
+    position: fixed;
+    bottom: 0;
+    height: 45px;
+    width: 100%;
+    z-index: 100;
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
+    padding: 11px 24px 7px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cta {
+    margin-right: 2.5rem;
+  }
+
+  h5,
+  p {
+    color: var(--white);
+  }
+  h5 {
+    font-weight: 100;
+    margin-bottom: 4px;
+  }
+</style>
